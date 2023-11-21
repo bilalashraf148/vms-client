@@ -1,7 +1,8 @@
 {
-  "name": "color-management-system",
+  "name": "vehicle-management-system",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://aliimranassociates.com",
   "dependencies": {
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
@@ -16,6 +17,7 @@
     "axios": "^1.4.0",
     "framer-motion": "^6.3.3",
     "history": "^5.2.0",
+    "lodash.debounce": "^4.0.8",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-helmet-async": "^1.3.0",

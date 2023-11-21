@@ -119,6 +119,7 @@ export const LoginForm = () => {
             size="large"
             type="submit"
             variant="contained"
+            sx={{background: "#3d6865"}}
           >
             Login
           </LoadingButton>

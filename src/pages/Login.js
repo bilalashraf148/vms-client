@@ -29,12 +29,7 @@ export const Login = () => {
 
   useEffect(() => {
     if(user) {
-      if(user.role === "admin") {
-        navigate("/admin/dashboard");
-      }
-      else {
-        navigate("/products/view");
-      }
+      navigate("/admin/vehicles");
     }
   }, [navigate, user]);
   
