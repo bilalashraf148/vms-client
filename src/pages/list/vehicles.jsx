@@ -179,7 +179,7 @@ export const VehicleTable = () => {
       </StyledTableRow>;
     }
     const markup = paginatedVehicles.map(
-      ({ id, registration, bankName, model }, index) => (
+      ({ id, registration, bankName, model, city }, index) => (
         <StyledTableRow key={index}>
           <StyledTableCell width={"20px"}>{page * rowsPerPage + index + 1}</StyledTableCell>
           <StyledTableCell width={"117px"}>
@@ -192,6 +192,7 @@ export const VehicleTable = () => {
           <StyledTableCell>{registration}</StyledTableCell>
           <StyledTableCell>{model}</StyledTableCell>
           <StyledTableCell>{bankName}</StyledTableCell>
+          <StyledTableCell>{city}</StyledTableCell>
         </StyledTableRow>
       )
     );
@@ -246,6 +247,7 @@ export const VehicleTable = () => {
                 <StyledTableCell>Registration</StyledTableCell>
                 <StyledTableCell>Model</StyledTableCell>
                 <StyledTableCell>Bank</StyledTableCell>
+                <StyledTableCell>City</StyledTableCell>
               </TableRow>
             </TableHead>
             <TableBody>
