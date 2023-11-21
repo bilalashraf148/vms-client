@@ -1,0 +1,23 @@
+name: Prod Deployment
+
+on: 
+  push:
+    branches:
+      - main
+
+jobs:
+  api-deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+    -  name: Get latest code
+       uses: actions/checkout@v2
+
+    -  name: Sync files
+       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+       with:
+         server: ftp.aliimranassociates.com
+         username: ${{ secrets.USERNAME }}
+         password: ${{ secrets.PASSWORD }}
+         server-dir: /
+      
