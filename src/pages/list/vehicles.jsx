@@ -117,7 +117,7 @@ export const VehicleTable = () => {
   const filteredVehicles = useMemo(() => {
     return vehicles.filter(vehicle => {
       return vehicle.registration?.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        vehicle.bankName.toLowerCase().includes(searchTerm.toLowerCase());
+        vehicle.bankName?.toLowerCase().includes(searchTerm.toLowerCase());
     });
   }, [searchTerm, vehicles]);
 
