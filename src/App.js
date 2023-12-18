@@ -9,7 +9,7 @@ import { VehicleTable } from "./pages/list/vehicles";
 
 export const App = () => {
   return (
-    <Box style={{backgroundImage: `url(${"/car-image.jpeg"})`, backgroundSize: "cover"}}>
+    <Box>
       <CssBaseline />
       <AuthProvider>
         <Layout>
