@@ -103,6 +103,7 @@ export const VehicleTable = () => {
 
   useEffect(() => {
     getFilteredVehicles();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [vehicles]);
 
   const handleSubmit = useCallback(() => {
@@ -141,10 +142,11 @@ export const VehicleTable = () => {
       setFilteredVehicles(results);
       setSearchTerm('');
     }
-  }, [searchTerm, vehicles]);
+  }, [filteredVehicles, searchTerm, vehicles]);
 
   useEffect(() => {
     getFilteredVehicles();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [debouncedSearch]);
 
   const handleSelectAllClick = useCallback(
