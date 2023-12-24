@@ -1,5 +1,5 @@
-import { createContext, useContext, useState } from "react";
-import { getUserFromLocalStorage } from "../utils";
+import { createContext, useContext, useState } from 'react';
+import { getUserFromLocalStorage } from '../utils';
 
 const AuthContext = createContext();
 
