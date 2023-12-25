@@ -30,6 +30,8 @@ const StyledTableCell = styled(TableCell)({
   borderRight: '1px solid #ddd',
   fontWeight: 'bold',
   lineHeight: '0.1',
+  overflow: 'hidden',
+  whiteSpace: 'nowrap',
 });
 
 const StyledTableRow = styled(TableRow)(({ theme }) => ({
